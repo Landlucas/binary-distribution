@@ -1,0 +1,27 @@
+body {
+  background-color: #e8e8e8;
+  display: grid;
+  max-width: 100vw;
+  max-height: 100vh;
+  padding: 1rem;
+  grid-template-areas:
+  'files-table-list files-table-list'
+  '. upload-button';
+  grid-template-columns: auto 10rem;
+  grid-template-rows: 400px auto;
+  grid-gap: 1rem;
+}
+
+.files-table-list-wrapper {
+  grid-area: files-table-list;
+  background-color: #fff;
+}
+
+.files-table-list {
+  max-height: 100%;
+  overflow-y: scroll;
+}
+
+.upload-button {
+  grid-area: upload-button;
+}
